@@ -5,15 +5,15 @@
 class Tightcode < Formula
   desc "AI code review on every git push"
   homepage "https://tightcode.dev"
-  version "0.3.2"
+  version "0.3.3"
   license :cannot_represent
 
   if Hardware::CPU.arm?
-    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.2/tightcode-0.3.2-darwin-arm64.tar.gz"
-    sha256 "85573cdbbf8f4ceea2f3562a1016724a75da97ddd5589dec573934ed9aec23e6"
+    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.3/tightcode-0.3.3-darwin-arm64.tar.gz"
+    sha256 "707225e878f76ce1d73237006c07f33329d208ba392473c614e05582e66a37bf"
   else
-    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.2/tightcode-0.3.2-darwin-x64.tar.gz"
-    sha256 "629ebaeb07f5f598e6e38b20928f0272ad4457b07bde30e855e2d8353d1c04d2"
+    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.3/tightcode-0.3.3-darwin-x64.tar.gz"
+    sha256 "d47de891dd6cb49958a8d401e3069897d3d550f2060998d6a34402d73348c8ca"
   end
 
   depends_on :macos
