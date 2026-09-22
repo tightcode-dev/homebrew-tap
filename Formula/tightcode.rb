@@ -5,15 +5,15 @@
 class Tightcode < Formula
   desc "AI code review on every git push"
   homepage "https://tightcode.dev"
-  version "0.3.1"
+  version "0.3.2"
   license :cannot_represent
 
   if Hardware::CPU.arm?
-    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.1/tightcode-0.3.1-darwin-arm64.tar.gz"
-    sha256 "39837011768efe610e1ed7a621258afb8c85c51c771edc7cc68e3b76896c88f4"
+    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.2/tightcode-0.3.2-darwin-arm64.tar.gz"
+    sha256 "85573cdbbf8f4ceea2f3562a1016724a75da97ddd5589dec573934ed9aec23e6"
   else
-    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.1/tightcode-0.3.1-darwin-x64.tar.gz"
-    sha256 "72cddfb4d9c6db06f382a3d6895e0ba14af2b7c5bf881bd2e0554b93926d2b85"
+    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.2/tightcode-0.3.2-darwin-x64.tar.gz"
+    sha256 "629ebaeb07f5f598e6e38b20928f0272ad4457b07bde30e855e2d8353d1c04d2"
   end
 
   depends_on :macos
@@ -24,10 +24,12 @@ class Tightcode < Formula
 
   def caveats
     <<~EOS
-      Two steps finish the setup:
+      First install: two steps finish the setup.
         tightcode login          sign in with the Google account you subscribed with
         tightcode install-hook   make git review every push on this Mac
-      Tight Code runs the review with Claude Code, which must be installed and signed in.
+      Upgrade: run `tightcode status` once, so the dashboard sees the new version now
+      (Homebrew cannot tell it for you). Tight Code runs the review with Claude Code,
+      which must be installed and signed in.
     EOS
   end
 
