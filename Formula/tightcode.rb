@@ -5,21 +5,21 @@
 class Tightcode < Formula
   desc "AI code review on every git push"
   homepage "https://tightcode.dev"
-  version "0.3.24"
+  version "0.3.25"
   license :cannot_represent
 
   if Hardware::CPU.arm?
-    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.24/tightcode-0.3.24-darwin-arm64.tar.gz"
-    sha256 "0f289fb25e4009263496c2a82b74600fa42bdd355ab958bf098428c9d25c3f5f"
+    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.25/tightcode-0.3.25-darwin-arm64.tar.gz"
+    sha256 "e3161f22bf274c3db5c245c1f2bdbebf55dc82ba86f2d9f9ee97c83eca8a2b39"
   else
-    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.24/tightcode-0.3.24-darwin-x64.tar.gz"
-    sha256 "b5222ac8f66fd5851949ccbd9c3d7e0b9d516a4c265068c6137119a7e6bc8631"
+    url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.25/tightcode-0.3.25-darwin-x64.tar.gz"
+    sha256 "f33a064632e72238ec6230ed3f554b69b219e2f0d7b0725b99bab985aa554596"
   end
 
   bottle do
-    root_url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.24"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "5a0ac9ecf0112f18e5c22f8fc2711c35816bda39977b42307b1ae6b182659959"
-    sha256 cellar: :any_skip_relocation, big_sur: "6cf99a20aadf4cdc82f0d0429672786aed62f5ab97bee6432d3b63a12e921e82"
+    root_url "https://github.com/tightcode-dev/homebrew-tap/releases/download/v0.3.25"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c61f48b9e3366882ab7f19145cf3dc652683deb37729e851423816c1e7f9b8c2"
+    sha256 cellar: :any_skip_relocation, big_sur: "bbfa2e170a25132fa89e70ec54461876137ecf0ecad68c0522d2f69e199e0fcd"
   end
 
   depends_on :macos
